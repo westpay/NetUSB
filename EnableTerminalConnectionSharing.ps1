@@ -41,8 +41,6 @@ Process {
     # The interface description is always Remote NDIS based Internet Sharing Device - followed by a number
     # This script assumes only one terminal is connected to the PC
 
-    Write-Host $Disable.IsPresent
-
     # Get adapter name with the correct description
     $terminalInterface = Get-NetAdapter -InterfaceDescription 'Remote *'
     $terminalInterfaceName = $terminalInterface.Name
