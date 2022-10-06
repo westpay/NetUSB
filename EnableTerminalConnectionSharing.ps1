@@ -79,7 +79,7 @@ Process {
         }
         catch 
         {
-            Write-Host $(Get-Date) ": Error - No interface with internet autoatically found, Aborting"
+            Write-Host $(Get-Date) ": Error - No interface with internet automatically found, Aborting"
             Exit
         }
 
@@ -120,7 +120,7 @@ Process {
             } 
             catch 
             {
-                Write-Host $(Get-Date) ": Failed to activate ICS, manually check if ICS is active on other interface?"
+                Write-Host $(Get-Date) ": Failed to activate ICS! Manually check if ICS is active on other interface."
                 Exit
             }
 
